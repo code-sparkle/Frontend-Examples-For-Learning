@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post" name="Registration">
+        <fieldset>
+            <legend>Account information</legend>
+            Email: <input type="text" name="email"> <br>
+            Password: <input type="password" name="password"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Profile</legend>
+            Gender:
+            <input type="radio" name="gender" id="male" value="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female"> <label for="female">Female</label> <br>
+
+            Interests:
+            <label>
+                <input type="checkbox" name="interests"> Art
+            </label>
+            <label>
+                <input type="checkbox" name="interests"> Music
+            </label>
+            <label>
+                <input type="checkbox" name="interests"> Nature
+            </label>
+            <label>
+                <input type="checkbox" name="interests"> Science
+            </label>
+            <label>
+                <input type="checkbox" name="interests"> Sports
+            </label> <br>
+
+            Race:
+            <select name="race">
+                <option>African</option>
+                <option>Asian</option>
+                <option>Caucasian</option>
+                <option>Hispanic</option>
+                <option>Native American</option>
+                <option selected>Prefer Not to tell</option>
+            </select> <br>
+
+            About Me:
+            <textarea name="self-intro" cols="30" rows="10"></textarea> <br>
+
+            Upload Picture:
+            <input type="file" id="picture" name="picture" hidden><label for="picture" class="button">Choose From
+                Computer</label><br>
+        </fieldset>
+
+        <input type="button" class="button" value="Send Confirmation Email">
+        <input type="reset" class="button" value="Clear All Fields">
+        <input type="submit" class="button" value="Sign Up For Free">
+    </form>
+</body>
+
+</html>
